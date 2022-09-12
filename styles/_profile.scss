@@ -1,0 +1,123 @@
+.profile-page {
+  width: calc(100% - 330px);
+
+  .hidden {
+    display: none;
+  }
+
+  .password-change {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    width: 25em;
+    height: 15em;
+    background: #fff;
+    border: solid 1px red;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    div {
+      display: flex;
+      gap: 1em;
+    }
+  }
+
+  h1 {
+    color: #E86060;
+    margin-bottom: 1em;
+  }
+
+  .up-section {
+    background: #E86060;
+    display: flex;
+    gap: 1.5em;
+
+    div {
+      display: grid;
+      align-content: center;
+      gap: 1em;
+      color: #fff;
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .profile-picture {
+    position: relative;
+    width: 200px;
+
+    &:hover {
+      input {
+        top: 50%;
+        left: 50%;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        opacity: 1;
+      }
+    }
+    
+    img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      // border-radius: 50%;
+    }
+
+    input {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      // border: solid #fff 10px;
+      padding: .5em;
+      opacity: 0;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      background: url('https://img.myloview.com/posters/photo-camera-vector-icon-400-171073299.jpg');
+      background-size: cover;
+      transform: translateX(-50%) translateY(-50%);
+      transition: all .5s ease;
+
+      &:hover {
+        width: 90px;
+        height: 90px;
+      }
+    }
+
+    input[type="file"]::-webkit-file-upload-button  {
+      visibility: hidden;
+      padding-top: 8px;
+    }
+
+  }
+
+  .lock-password {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr 9em;
+
+    // input {
+      
+    // }
+    
+    div {
+      background: blue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100vmax;
+      background: #828282;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}
+

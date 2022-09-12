@@ -1,0 +1,32 @@
+.tracks-page {
+  width: calc(100% - 330px);
+}
+
+main {
+  .number-of-tracks {
+    color: #E86060;
+    font-size: 30px;
+    width: 100%;
+  } 
+
+  .tracks-container {
+    display: grid;
+    border-top: solid #828282 1.5px;
+    margin-top: 1em;
+
+    .track {
+      display: grid;grid-template-columns: auto 1fr 1fr 3em 2em 2em;
+      gap: 1em;
+      align-items: center;
+      padding: .5em;
+
+      &:hover {
+        background: #E86060;
+      }
+      
+      img {
+        height: 40px;
+      }
+    }
+  }
+}

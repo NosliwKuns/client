@@ -1,0 +1,153 @@
+main {
+
+  margin-left: 330px;
+  margin-top: 4em;
+  padding: 1em 2.5em;
+
+  .infocard-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    height: 250px;
+    margin-bottom: 2.5em;
+
+    .infocard-content {
+      background: #a700007c;
+      padding: 2em 1.5em 1.5em 1.5em;
+      height: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: #fff;
+
+      .infocard-text {
+        h4 {
+         font-size: 22px;
+         font-weight: 700; 
+        }
+
+        .infocard-artist {
+          font-size: 14px;
+          margin-right: 1em;
+        }
+
+        .infocard-followers {
+          font-size: 10px;
+          color: #662323;
+        }
+
+        .infocard-description {
+          font-size: 12px;
+          margin-top: 1.5em;
+        }
+      }
+
+      .infocard-buttons{
+        display: flex;
+        gap: 1em;
+
+        button {
+          width: 117px;
+          font-size: 14px;
+          padding: 5px;
+          border-radius: 100vmax;
+          border: none;
+        }
+
+        .play {
+          background: #E86060;
+          color: #fff;
+        }
+
+        .follow {
+          border: solid #EB5757 1px;
+          color: #EB5757;
+          background: transparent;
+        }
+
+        .dots {
+          font-weight: 700;
+          letter-spacing: 2px;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .albums-container{
+    .results {
+      color: #E86060;
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: .8em;
+    }
+
+    .albums-grid {
+      display: grid;
+      gap: 1.2em;
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    
+      // .stacked {
+      //   display: grid;
+
+      //   & > * {
+      //     grid-column: 1 / 2;
+      //     grid-row: 1 / 2;
+      //   }
+      // }
+
+      .album {
+        aspect-ratio: 1 / 1.2;
+
+        .album-cover-container{
+          position: relative;
+
+          .album-cover {
+            width: 100%;
+          }
+
+          button {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            border: 0;
+            background: transparent;
+            box-sizing: border-box;
+            width: 0;
+            height: 38px;
+            border-color: transparent transparent transparent #ffffff;
+            transition: 100ms all ease;
+            cursor: pointer;
+          
+            // play state
+            border-style: solid;
+            border-width: 19px 0 19px 30px;
+          
+            &.paused {
+              border-style: double;
+              border-width: 0px 0 0px 30px;
+            }
+          
+            &:hover {
+              border-color: transparent transparent transparent #A70000B2;
+            }
+            
+          }
+        }
+
+
+        .album-title {
+          color: #555555;
+          font-size: 14px;
+          font-weight: 700;
+        }
+
+        .album-artist {
+          color: #828282;
+          font-size: 12px;
+        }
+      }
+    }
+
+  }
+}

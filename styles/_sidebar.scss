@@ -1,0 +1,44 @@
+aside {
+  background: #662323;
+  height: 100vh;
+  width: 330px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  img {
+    width: 250px;
+    height: 59px;
+    margin: 40px 40px 40px 40px;
+    cursor: pointer;
+  }
+  
+  .my-library {
+    margin-bottom: 2em;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+    .text-section {
+      color: #fff;
+      font-size: 22px;
+      font-weight: 700;
+      padding-left: 40px;
+      line-height: 27.5px;
+    }
+  
+    article {
+      color: rgb(255, 255, 255);
+      font-weight: 400;
+      font-size: 16px;
+      padding-left: 40px;
+      font-style: normal;
+      line-height: 20px;
+      // border: solid 1px tomato;
+    }
+  }
+}

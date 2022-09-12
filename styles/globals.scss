@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import './sidebar.scss';
+@import './header.scss';
+@import './home.scss';
+@import './tracks.scss';
+@import './login.scss';
+@import './register.scss';
+@import './profile.scss';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  // line-height: 1;
+  // width: 100vw !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+.container {
+  // background: gray;
+  display: flex;
+  flex-wrap: wrap;
+  // width: 100vw;
+  // height: 100vh;
+}

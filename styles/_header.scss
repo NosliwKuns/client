@@ -1,0 +1,110 @@
+header {
+  position: fixed;
+  width: calc(100% - 330px);
+  height: 4em;
+  background: #fff;
+  margin-left: 330px;
+  z-index: 1;
+  left: 0;
+  display: flex;
+  gap: 1em;
+  justify-content: space-between;
+  padding: 1em 2.5em;
+
+  .searchbar {
+    width: max(4vw, 524px);
+    display: flex;
+    position: relative;
+
+    input {
+      width: 100%;
+      border-radius: 10vmax;
+      border: solid #828282 1px;
+      padding-left: 1em;
+
+      &::placeholder {
+        color: #BDBDBD;
+      }
+    }
+
+    button {
+      position: absolute;
+      right: 5px;
+      width: 32px;
+      height: 32px;
+      border: none;
+      border-radius: 100vmax;
+      background:transparent;
+
+      svg {
+        height: 32px;
+        fill: #BDBDBD;
+      }
+    }
+  }
+
+  .user-buttons {
+    display: flex;
+    gap: 1em;
+
+    button {
+      border-radius: 100vmax;
+      border: none;
+      width: 117px;
+      background: #E86060;
+      color: #fff;
+    }
+  }
+
+  .user {
+    display: flex;
+    position: relative;
+    gap: 1em;
+    align-items: center;
+    svg {
+      fill: #E86060;
+    }
+
+    span {
+      color: #4F4F4F;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; 
+    }
+
+    .close {
+      background: teal;
+      height: 100vh;
+      width: 100vw;
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 20;
+    }
+
+    .downdrop {
+      position: absolute;
+      background: #E86060;
+      bottom: -72px;
+      right: 0;
+      width: 10em;
+      color: #fff;
+
+      div {
+        padding: .5em;
+        cursor: pointer;
+
+        &:hover {
+          background: #BDBDBD;
+          color: #000000;
+        }
+      }
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+}
